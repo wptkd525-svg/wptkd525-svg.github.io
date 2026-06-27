@@ -9,6 +9,7 @@ export default defineConfig({
     path: "prisma/migrations",
   },
   datasource: {
-    url: process.env.TURSO_DATABASE_URL ?? process.env.DATABASE_URL,
+    // Prisma CLI는 libsql:// 미지원 — Turso 마이그레이션은 scripts/turso-migrate.mjs 사용
+    url: process.env.DATABASE_URL ?? "file:./dev.db",
   },
 });
