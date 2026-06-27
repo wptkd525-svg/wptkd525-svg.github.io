@@ -4,6 +4,8 @@
 
 ## 채점 / 데모 (배포 URL)
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwptkd525-svg%2Fwptkd525-svg.github.io&env=TURSO_DATABASE_URL,TURSO_AUTH_TOKEN,OPENAI_API_KEY&envDescription=Turso%20DB%20%2B%20OpenAI%20(%EC%83%81%EC%84%B8%EB%8A%94%20DEPLOY.md)&project-name=workout-app)
+
 별도 설치 없이 배포 URL에서 확인할 수 있습니다.
 
 1. 기구 설문 완료
