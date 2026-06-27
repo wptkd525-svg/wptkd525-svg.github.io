@@ -1,0 +1,217 @@
+import type { Stretch } from "./types";
+
+export const STRETCHES: Stretch[] = [
+  // 워밍업 - 가슴
+  {
+    id: "chest-warmup-arm-circles",
+    name: "팔 돌리기",
+    bodyParts: ["가슴", "어깨"],
+    phase: "warmup",
+    duration: "30초",
+    description: "양팔을 앞뒤로 크게 돌려 어깨와 가슴을 풀어줍니다.",
+  },
+  {
+    id: "chest-warmup-band-pull",
+    name: "밴드 풀어파트",
+    bodyParts: ["가슴", "등"],
+    phase: "warmup",
+    duration: "30초",
+    description: "밴드나 가벼운 중량으로 가슴을 열어주는 동작입니다.",
+  },
+  // 워밍업 - 등
+  {
+    id: "back-warmup-cat-cow",
+    name: "캣-카우 스트레치",
+    bodyParts: ["등", "코어"],
+    phase: "warmup",
+    duration: "45초",
+    description: "척추를 부드럽게 움직여 등과 코어를 준비합니다.",
+  },
+  {
+    id: "back-warmup-scapular",
+    name: "견갑골 움직임",
+    bodyParts: ["등", "어깨"],
+    phase: "warmup",
+    duration: "30초",
+    description: "견갑골을 앞뒤로 움직여 등 상부를 활성화합니다.",
+  },
+  // 워밍업 - 어깨
+  {
+    id: "shoulder-warmup-rotation",
+    name: "어깨 돌리기",
+    bodyParts: ["어깨"],
+    phase: "warmup",
+    duration: "30초",
+    description: "어깨 관절을 부드럽게 풀어주는 기본 워밍업입니다.",
+  },
+  {
+    id: "shoulder-warmup-cross-body",
+    name: "크로스바디 스트레치",
+    bodyParts: ["어깨"],
+    phase: "warmup",
+    duration: "30초",
+    description: "한 팔을 가슴 앞으로 당겨 후면 어깨를 풀어줍니다.",
+  },
+  // 워밍업 - 하체
+  {
+    id: "legs-warmup-leg-swing",
+    name: "다리 스윙",
+    bodyParts: ["하체"],
+    phase: "warmup",
+    duration: "30초",
+    description: "앞뒤로 다리를 스윙하여 하체 관절을 풀어줍니다.",
+  },
+  {
+    id: "legs-warmup-bodyweight-squat",
+    name: "맨몸 스쿼트",
+    bodyParts: ["하체"],
+    phase: "warmup",
+    duration: "45초",
+    description: "가벼운 스쿼트로 하체 근육을 활성화합니다.",
+  },
+  {
+    id: "legs-warmup-hip-circle",
+    name: "고관절 돌리기",
+    bodyParts: ["하체"],
+    phase: "warmup",
+    duration: "30초",
+    description: "고관절을 원을 그리며 돌려 하체를 준비합니다.",
+  },
+  // 워밍업 - 팔
+  {
+    id: "arms-warmup-wrist",
+    name: "손목 돌리기",
+    bodyParts: ["팔"],
+    phase: "warmup",
+    duration: "30초",
+    description: "손목과 팔꿈치 관절을 부드럽게 풀어줍니다.",
+  },
+  {
+    id: "arms-warmup-arm-swing",
+    name: "팔 스윙",
+    bodyParts: ["팔", "어깨"],
+    phase: "warmup",
+    duration: "30초",
+    description: "팔을 좌우로 스윙하여 상체를 준비합니다.",
+  },
+  // 워밍업 - 코어
+  {
+    id: "core-warmup-torso-twist",
+    name: "상체 비틀기",
+    bodyParts: ["코어"],
+    phase: "warmup",
+    duration: "30초",
+    description: "상체를 좌우로 비틀어 코어를 활성화합니다.",
+  },
+  {
+    id: "core-warmup-bird-dog",
+    name: "버드독",
+    bodyParts: ["코어", "등"],
+    phase: "warmup",
+    duration: "45초",
+    description: "반대 팔다리를 들어 코어 안정성을 준비합니다.",
+  },
+
+  // 쿨다운 - 가슴
+  {
+    id: "chest-cooldown-doorway",
+    name: "가슴 스트레치",
+    bodyParts: ["가슴"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "벽이나 문틀에 손을 대고 가슴을 늘려줍니다.",
+  },
+  // 쿨다운 - 등
+  {
+    id: "back-cooldown-child-pose",
+    name: "차일드 포즈",
+    bodyParts: ["등", "코어"],
+    phase: "cooldown",
+    duration: "45초",
+    description: "무릎을 꿇고 상체를 숙여 등을 이완합니다.",
+  },
+  {
+    id: "back-cooldown-lat-stretch",
+    name: "광배근 스트레치",
+    bodyParts: ["등"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "한 팔을 위로 뻗어 광배근을 늘려줍니다.",
+  },
+  // 쿨다운 - 어깨
+  {
+    id: "shoulder-cooldown-overhead",
+    name: "어깨 오버헤드 스트레치",
+    bodyParts: ["어깨"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "한 팔을 머리 뒤로 당겨 어깨를 이완합니다.",
+  },
+  {
+    id: "shoulder-cooldown-cross",
+    name: "후면 어깨 스트레치",
+    bodyParts: ["어깨", "등"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "팔을 가슴 앞으로 당겨 후면 어깨를 늘려줍니다.",
+  },
+  // 쿨다운 - 하체
+  {
+    id: "legs-cooldown-quad",
+    name: "대퇴사두근 스트레치",
+    bodyParts: ["하체"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "한 발을 잡고 대퇴사두근을 늘려줍니다.",
+  },
+  {
+    id: "legs-cooldown-hamstring",
+    name: "햄스트링 스트레치",
+    bodyParts: ["하체"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "다리를 앞으로 뻗고 상체를 숙여 햄스트링을 이완합니다.",
+  },
+  {
+    id: "legs-cooldown-hip-flexor",
+    name: "고관절 굴곡근 스트레치",
+    bodyParts: ["하체"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "런지 자세로 고관절 앞쪽을 늘려줍니다.",
+  },
+  // 쿨다운 - 팔
+  {
+    id: "arms-cooldown-tricep",
+    name: "삼두 스트레치",
+    bodyParts: ["팔"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "팔을 머리 뒤로 당겨 삼두근을 이완합니다.",
+  },
+  {
+    id: "arms-cooldown-bicep",
+    name: "이두 스트레치",
+    bodyParts: ["팔"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "팔을 뒤로 뻗어 이두근을 늘려줍니다.",
+  },
+  // 쿨다운 - 코어
+  {
+    id: "core-cooldown-cobra",
+    name: "코브라 스트레치",
+    bodyParts: ["코어", "등"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "엎드려 상체를 들어 복부와 척추를 이완합니다.",
+  },
+  {
+    id: "core-cooldown-side-bend",
+    name: "옆구리 스트레치",
+    bodyParts: ["코어"],
+    phase: "cooldown",
+    duration: "30초",
+    description: "한 팔을 위로 뻗고 옆으로 기울여 복사근을 늘려줍니다.",
+  },
+];
