@@ -41,6 +41,19 @@ npm run db:migrate
 4. **Deploy** 클릭
 5. 완료 후 `https://프로젝트명.vercel.app` 이 채점용 URL
 
+### Vercel 빌드 설정 확인 (P1013 / 예전 빌드 스크립트)
+
+빌드 로그에 `prisma migrate deploy`가 보이면 **예전 코드**로 빌드 중입니다.  
+최신 빌드는 `node scripts/turso-migrate.mjs`를 사용해야 합니다.
+
+1. Vercel → **Settings** → **General** → **Build & Development Settings**
+2. **Build Command** → **Override 끄기** (또는 비우고 Default 사용)
+3. **Production Branch** = `main`
+4. **Git Repository** = `wptkd525-svg/wptkd525-svg.github.io`
+5. **Deployments** → 최신 커밋 `Harden Vercel deploy...` 로 **Redeploy**
+
+환경 변수: `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN`, `OPENAI_API_KEY`만 설정. **`DATABASE_URL`은 넣지 마세요.**
+
 ## 4. 과제 제출
 
 - GitHub 링크 + Vercel 배포 URL 함께 제출

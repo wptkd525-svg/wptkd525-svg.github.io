@@ -1,5 +1,5 @@
 {
   "framework": "nextjs",
-  "buildCommand": "npm run build",
+  "buildCommand": "prisma generate && node scripts/turso-migrate.mjs && next build",
   "installCommand": "npm install"
 }
