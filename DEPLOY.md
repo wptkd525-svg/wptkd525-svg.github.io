@@ -32,9 +32,11 @@ npm run db:migrate
 
 | Name | Value |
 |------|--------|
-| `TURSO_DATABASE_URL` | Turso libsql URL |
+| `TURSO_DATABASE_URL` | Turso libsql URL (`libsql://...`) |
 | `TURSO_AUTH_TOKEN` | Turso token |
 | `OPENAI_API_KEY` | OpenAI API 키 |
+
+> **`DATABASE_URL`은 Vercel에 넣지 마세요.** `libsql://`를 넣으면 빌드가 실패합니다(P1013).
 
 4. **Deploy** 클릭
 5. 완료 후 `https://프로젝트명.vercel.app` 이 채점용 URL

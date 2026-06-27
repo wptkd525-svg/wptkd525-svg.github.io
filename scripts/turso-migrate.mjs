@@ -13,6 +13,12 @@ const url = process.env.TURSO_DATABASE_URL;
 const authToken = process.env.TURSO_AUTH_TOKEN;
 
 if (!url || !authToken) {
+  if (process.env.VERCEL) {
+    console.warn(
+      "Turso env not set on Vercel — skipping migration (set TURSO_DATABASE_URL + TURSO_AUTH_TOKEN).",
+    );
+    process.exit(0);
+  }
   console.log("Turso env not set — running local SQLite migration.");
   await runLocalMigrate();
   process.exit(0);
